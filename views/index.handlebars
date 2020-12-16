@@ -1,0 +1,57 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class = "row">
+        <h2>Who doesn't like a good burger?</h2>
+    </div>
+    <img src="../public/assets/img/hamburger5.png" alt="burgerImg" id="burgerImg">
+    <img src="../public/assets/img/hamburger4.png" alt="burgerImg" id="burgerImg">
+    <img src="../public/assets/img/hamburger3.png" alt="burgerImg" id="burgerImg">
+    {{!-- <img src="../public/assets/img/choc_shake.png" alt="shakeImg" id="shakeImg"> --}}
+</div>
+
+<div class="flexbox-container">
+
+        <div class="flexbox-item-1">            
+            {{!-- <h2> Devour Burger!!! </h2> --}}
+            {{!-- <img src="../public/assets/img/burger-image.png" alt="burgerImg" id="burgerImg"> --}}
+            <ul id="uneaten">
+                <h2> Eat Da Burger!!! </h2>
+                {{#each burger}}
+                {{#unless devoured}}
+                {{> burger/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+
+        </div>
+
+        <div class="flexbox-item-2">
+            
+            {{!-- <img src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png" alt="burgerImg" id="burgerImg"> --}}
+            {{!-- <img src="../public/assets/img/burger-image.png" alt="burgerImg" id="burgerImg"> --}}
+            <h2>Create Da Burger!!!</h2>
+            {{!-- <h3>Enter your creation below</h3> --}}
+            <form class="burgerInput">
+            <input type="text" id="newBurger" name="burger_name">
+                <div class="flexbox-container">
+                    
+                    <button type="submit" id="burgerBtn">Add Burger</button>
+
+                </div>
+            </form>
+            
+        </div>
+        <div class="flexbox-item-3">
+            {{!-- <img src="../public/assets/img/burger-image.png" alt="burgerImg" id="burgerImg"> --}}
+            {{!-- <img src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png" alt="burgerImg" id="burgerImg"> --}}
+            <ul id="eaten">
+                <h2>Ate Da Burgers!!! </h2>
+                {{#each burger}}
+                {{#if devoured}}
+                {{!-- > means you're looking in the partials directory --}}
+                {{> burger/burger-block devoured=true}}
+                {{/if}}
+                {{/each}}
+            </ul>
+
+        </div>
+    </div>

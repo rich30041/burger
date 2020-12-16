@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server6.js",
+    "watch": "nodemon server6.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rich30041/burger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rich30041/burger/issues"
+  },
+  "homepage": "https://github.com/rich30041/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6"
+  }
+}
