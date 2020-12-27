@@ -32,7 +32,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
 npm install
 
 ## Usage
-Click on Heroku link to start appplication.
+- [Heroku App Link](https://secret-anchorage-98279.herokuapp.com/)
 
 
 ## Pseudocode steps to creating application
@@ -154,3 +154,4 @@ Click on Heroku link to start appplication.
 - [Project Repository](https://github.com/rich30041/burger)
 
 ## Heroku
+- [Heroku App Link](https://secret-anchorage-98279.herokuapp.com/)
