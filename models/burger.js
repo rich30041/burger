@@ -1,6 +1,7 @@
 var orm = require("../config/orm");
 
 var burger = {
+    // get all the burgers, insert a burger, or eat a burger
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {
             cb(res);
